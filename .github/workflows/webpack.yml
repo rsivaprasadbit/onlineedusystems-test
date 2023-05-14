@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name:  CI
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         npm @angular/cdk@14.2.7
         npm @angular/material@14.2.7
         npm install
-               
+
     - name: NPM Test
       run: |
           export CHROME_BIN=/usr/bin/chromium-browser
