@@ -28,4 +28,12 @@ jobs:
         npm @angular/cdk@14.2.7
         npm @angular/material@14.2.7
         npm install
-        npx webpack
+               
+    - name: NPM Test
+      run: |
+          export CHROME_BIN=/usr/bin/chromium-browser
+          CI=true npm run test-headless
+      env:
+          CI: true
+            npx webpack
+ 
