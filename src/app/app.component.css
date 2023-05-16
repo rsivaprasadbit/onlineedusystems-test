@@ -35,8 +35,13 @@ mat-sidenav-container {
 }
 
 mat-sidenav {
-  background-color: rgb(160, 157, 157);
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   width: 200px;
+}
+
+.mat-list-item:hover{
+background-color: rgb(175, 171, 171);
 }
 
 mat-sidenav.collapsed {

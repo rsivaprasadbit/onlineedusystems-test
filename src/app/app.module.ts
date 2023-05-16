@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +24,23 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { CoursesComponent } from './courses/courses.component';
 import { HomeComponent } from './home/home.component';
+import { LearnerComponent } from './learner/learner.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { LearnerContentComponent } from './learner-content/learner-content.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { TestModuleComponent } from './test-module/test-module.component';
+import { AttemptTestComponent } from './attempt-test/attempt-test.component';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatRadioModule } from '@angular/material/radio';
+
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { PopupComponent } from './popup/popup.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
     UsersComponent,
@@ -32,10 +48,20 @@ import { HomeComponent } from './home/home.component';
     EditUserComponent,
     CoursesComponent,
     HomeComponent,
-  
+    LearnerComponent,
+    LearnerContentComponent,
+    TestModuleComponent,
+    AttemptTestComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
+    NgxChartsModule,
+    MatDialogModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
+    MatCardModule,
+    MatRadioModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatSlideToggleModule,
@@ -50,6 +76,8 @@ import { HomeComponent } from './home/home.component';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
+    MatExpansionModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

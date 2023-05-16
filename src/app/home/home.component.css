@@ -1,0 +1,59 @@
+.dashboard {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .progress-text {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .pie-chart-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+  }
+  
+  /* ngx-charts-pie-chart styles */
+  .pie-chart {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .legend-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .legend-label {
+    font-size: 14px;
+    color: #555;
+  }
+  

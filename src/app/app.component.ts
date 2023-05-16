@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-//import { VoiceRecognitionService } from './services/voice-recognition.service';
+import { VoiceRecognitionService } from './services/voice-recognition.service';
+import { Router } from '@angular/router';
+import { TextToSpeechService } from './services/speech-to-text.service';
 
 @Component({
   selector: 'app-root',
@@ -13,17 +15,16 @@ export class AppComponent {
   title = 'eduOnlineSystems';
   @ViewChild('sidenav') sidenav: MatSidenav | undefined;
 
-  constructor(){
-
+  constructor(public service:VoiceRecognitionService,public vservice:TextToSpeechService,private router: Router){
+    
 
   }
-  ngOnInit() {
+  async ngOnInit() {
 
   }
   
   toggleSidenav() {
   
-
     this.isCollapsed = !this.isCollapsed;
     if (this.isCollapsed) {
     //  this.sidenav?.close();
